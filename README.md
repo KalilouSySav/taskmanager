@@ -1,4 +1,4 @@
-\Pour créer une application de gestion des tâches en utilisant JavaScript, Express.js et MongoDB, nous allons suivre l'architecture MVC (Modèle-Vue-Contrôleur). Voici les classes, fonctions et méthodes essentielles qui seront nécessaires :
+Pour créer une application de gestion des tâches en utilisant JavaScript, Express.js et MongoDB, nous allons suivre l'architecture MVC (Modèle-Vue-Contrôleur). Voici les classes, fonctions et méthodes essentielles qui seront nécessaires :
 
     Modèle :
 
@@ -16,4 +16,4 @@ Veuillez noter que le code suppose que vous avez MongoDB installé et en cours d
 
 Assurez-vous également d'exécuter npm install pour installer les dépendances requises mentionnées dans package.json avant de lancer l'application.
 
-Cette architecture suit les meilleures pratiques pour la création d'une application de gestion des tâches en utilisant Express.js et MongoDB. Elle sépare les préoccupations en utilisant des fichiers distincts pour les modèles, les contrôleurs, les routes et le fichier d'entrée. Le code est organisé et modulaire, ce qui facilite sa maintenance et son extension à l'avenir.
+Cette architecture suit les pratiques MVC pour la création d'une application de gestion des tâches en utilisant Express.js et MongoDB. Elle sépare les classes en utilisant des fichiers distincts pour les modèles, les contrôleurs, les routes et le fichier d'entrée. Le code est organisé et modulaire, ce qui facilite sa maintenance et son extension à l'avenir.
