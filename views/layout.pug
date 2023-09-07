@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header#main-header
+      h1#main-title.title= title
+      nav#main-nav
+        ul
+          li
+            a(href='/') Accueil
+          li
+            a(href='/tasks/') Tâches
+          li
+            a(href='/tasks/add') Ajouter une tâche
+    block content
+    footer#main-footer
+      p © 2023 - Tous droits réservés

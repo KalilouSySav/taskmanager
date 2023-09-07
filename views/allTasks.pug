@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  p#instructions Bienvenue dans cette section. Vous pouvez visualiser vos tâches et prendre des actions sur celles-ci.
+
+  table#task-table
+    thead
+      tr
+        th Titre
+        th Description
+        th Statut
+        th Date d'échéance
+        th Actions
+    tbody
+      each task in tasks
+        tr
+          td= task.title
+          td= task.description
+          td= task.status
+          td= task.dueDate.toISOString().split('T')[0]
+          td
+            a(href=`/tasks/edit/${task._id}`) Modifier
+            |  /
+            a(href=`/tasks/delete/${task._id}`) Supprimer

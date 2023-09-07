@@ -1,0 +1,256 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Styling du titre principal */
+#main-title {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling du texte d'introduction */
+.intro-text {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling des instructions */
+#instructions {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling du logo */
+#logo {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* Styling du header */
+#main-header {
+  background-color: #f9f9f9;
+  color: #0056b3;
+  padding: 20px;
+  text-align: center;
+}
+
+#main-title.title {
+  font-size: 36px;
+  margin: 0;
+}
+
+#main-nav {
+  margin-top: 20px;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#main-nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* Styling du footer */
+#main-footer {
+  background-color: #f9f9f9;
+  color: #0056b3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling du lien dans le footer */
+#main-footer a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* Styling du titre du contenu */
+#content-title {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Styling de la description du contenu */
+#content-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Styling de la table */
+#task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Styling de l'en-tête de la table */
+#task-table th {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Styling des lignes de la table */
+#task-table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling des cellules de la table */
+#task-table td {
+  padding: 10px;
+}
+
+/* Styling des liens "Modifier" et "Supprimer" */
+#task-table a {
+  text-decoration: none;
+  color: #007bff; /* couleur du lien */
+  margin-right: 10px;
+}
+
+/* Styling pour l'effet de survol des liens */
+#task-table a:hover {
+  text-decoration: underline;
+}
+
+/* Styling du titre du formulaire */
+#task-title {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Styling de la description du formulaire */
+#task-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Styling du formulaire */
+#task-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Styling des étiquettes des champs du formulaire */
+#task-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styling des champs de texte et de sélection du formulaire */
+#task-form input[type="text"],
+#task-form select,
+#task-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling du bouton de soumission du formulaire */
+#task-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styling pour l'effet de survol du bouton de soumission */
+#task-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styling du titre du formulaire d'édition */
+#edit-task-title {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Styling de la description du formulaire d'édition */
+#edit-task-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Styling du formulaire d'édition */
+#edit-task-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Styling des étiquettes des champs du formulaire d'édition */
+#edit-task-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styling des champs de texte et de sélection du formulaire d'édition */
+#edit-task-form input[type="text"],
+#edit-task-form select,
+#edit-task-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling des options sélectionnées dans le formulaire d'édition */
+#edit-task-form option[selected] {
+  font-weight: bold;
+}
+
+/* Styling du bouton "Enregistrer les modifications" du formulaire d'édition */
+#edit-task-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styling pour l'effet de survol du bouton "Enregistrer les modifications" */
+#edit-task-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}

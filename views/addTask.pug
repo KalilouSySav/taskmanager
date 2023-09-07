@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    p#instructions Bienvenue dans cette section. Vous pouvez ajouter des tâches à votre liste ci-dessous.
+
+    form#task-form(action="/tasks/", method="post")
+        div
+            label(for="title") Titre de la tâche :
+            input(type="text", name="title", id="title", required)
+
+        div
+            label(for="description") Description de la tâche :
+            input(type="text", name="description", id="description", required)
+
+        div
+            label(for="status") Statut de la tâche :
+            select(name="status", id="status")
+                option(value="Todo") À faire
+                option(value="In Progress") En cours
+                option(value="Done") Terminé
+
+        div
+            label(for="dueDate") Date d'échéance de la tâche :
+            input(type="date", name="dueDate", id="dueDate", required)
+
+        div
+            input(type="submit", value="Ajouter")

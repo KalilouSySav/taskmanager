@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  p#instructions Bienvenue dans cette section. Vous pouvez modifier vos tâches ici.
+
+  form#edit-task-form(action=`/tasks/update/${task._id}`, method="post")
+    div
+      label(for="title") Titre de la tâche :
+      input(type="text", name="title", id="title", value=task.title, required)
+
+    div
+      label(for="description") Description de la tâche :
+      input(type="text", name="description", id="description", value=task.description, required)
+
+    div
+      label(for="status") Statut de la tâche :
+      select(name="status", id="status")
+        option(value="Todo", selected=task.status === "Todo") À faire
+        option(value="In Progress", selected=task.status === "In Progress") En cours
+        option(value="Done", selected=task.status === "Done") Terminé
+
+    div
+      label(for="dueDate") Date d'échéance de la tâche :
+      input(type="date", name="dueDate", id="dueDate", value=task.dueDate.toISOString().split('T')[0], required)
+
+    div
+      input(type="submit", value="Enregistrer les modifications")
